@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de" ng-app="ninjaWorkoutApp">
+
+    <head>
+        <title>ninja-workout</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link type="text/css" rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+        <!-- <link href="bower_components/angular-material/angular-material.layouts.css"> -->
+        <link type="text/css" rel="stylesheet" href="bower_components/material-design-icons/iconfont/material-icons.css">
+
+        <!-- App specific -->
+        <link href="assets/css/app.css">
+    </head>
+
+    <body ng-controller="AppCtrl" layout="column" layout-fill>
+
+        <header>
+            <md-toolbar>
+                <div class="md-toolbar-tools">
+                    <md-button>
+                        <md-icon md-font-library="material-icons" aria-label="Navigation">menu</md-icon>
+                    </md-button>
+                    <h1>ninja-workout</h1>
+                </div>
+            </md-toolbar>
+        </header>
+
+        <main layout="row" flex>
+            <md-content flex>
+                <section layout="row" layout-align="center start">
+                    <md-button>
+                        <md-icon md-font-library="material-icons" aria-label="Play">play_arrow</md-icon>
+                    </md-button>
+                    <md-button>
+                        <md-icon md-font-library="material-icons" aria-label="Pause">pause</md-icon>
+                    </md-button>
+                    <md-button>
+                        <md-icon md-font-library="material-icons" aria-label="Stop">stop</md-icon>
+                    </md-button>
+                </section>
+                <section layout="row" layout-align="center start">
+                    <md-button><timer interval="1000" countdown="450">{{mminutes}}:{{sseconds}}</timer></md-button>
+                    <md-button><timer interval="1000" countdown="450">{{mminutes}}:{{sseconds}}</timer></md-button>
+                </section>
+                <section layout="column" layout-align="center start" layout-padding>
+                    <h2>Übung 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </section>
+            </md-content>
+            <md-list layout="column" flex="20" class="md-accent">
+                <md-list-item>Übung 1</md-list-item>
+                <md-list-item>Übung 2</md-list-item>
+                <md-list-item>Übung 3</md-list-item>
+                <md-list-item flex></md-list-item>
+            </md-list>
+        </main>
+
+        <!--<footer>
+
+        </footer>-->
+
+        <!-- Other -->
+        <script src="bower_components/momentjs/moment.js"></script>
+        <script src="bower_components/momentjs/locale/de.js"></script>
+        <script src="bower_components/humanize-duration/humanize-duration.js"></script>
+
+        <!-- Angular -->
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.js"></script>
+        <script src="bower_components/angular-aria/angular-aria.js"></script>
+        <script src="bower_components/angular-messages/angular-messages.js"></script>
+        <script src="bower_components/angular-material/angular-material.js"></script>
+        <script src="bower_components/angular-timer/dist/angular-timer.js"></script>
+
+        <!-- App specific -->
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/controllers.js"></script>
+    </body>
+
+</html>
