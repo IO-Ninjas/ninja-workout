@@ -30,19 +30,19 @@
         <main layout="row" flex>
             <md-content flex>
                 <section layout="row" layout-align="center start">
-                    <md-button>
+                    <md-button ng-click="startTimer()">
                         <md-icon md-font-library="material-icons" aria-label="Play">play_arrow</md-icon>
                     </md-button>
-                    <md-button>
+                    <md-button ng-click="pauseTimer()">
                         <md-icon md-font-library="material-icons" aria-label="Pause">pause</md-icon>
                     </md-button>
-                    <md-button>
+                    <md-button ng-click="stopTimer()">
                         <md-icon md-font-library="material-icons" aria-label="Stop">stop</md-icon>
                     </md-button>
                 </section>
                 <section layout="row" layout-align="center start">
-                    <md-button><timer interval="1000" countdown="450">{{mminutes}}:{{sseconds}}</timer></md-button>
-                    <md-button><timer interval="1000" countdown="450">{{mminutes}}:{{sseconds}}</timer></md-button>
+                    <md-button ng-controller="WorkoutSumCtrl"><timer interval="1000" countdown="workoutSumCountdown()">{{mminutes}}:{{sseconds}}</timer></md-button>
+                    <md-button ng-controller="WorkoutSetCtrl"><timer interval="1000" countdown="workoutSetCountdown">{{mminutes}}:{{sseconds}}</timer></md-button>
                 </section>
                 <section layout="column" layout-align="center start" layout-padding>
                     <h2>Übung 1</h2>
