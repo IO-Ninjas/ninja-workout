@@ -12,5 +12,5 @@ Web application for ninja-like bodyweight workouts.
 - http://www.fittr.com/
 - http://perfectthumb.com/
 - https://angel.co/purapp
-- https://github.com/brandonshin/slackbot-workout?ref=producthunt (! ;-)
+- https://github.com/brandonshin/slackbot-workout (! ;-)
 
